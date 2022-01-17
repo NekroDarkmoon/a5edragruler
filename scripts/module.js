@@ -1,6 +1,3 @@
-// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//                                    Imports
-// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //                                 Extender Class
@@ -22,7 +19,7 @@ Hooks.once('dragRuler.ready', (SpeedProvider) => {
       const ranges = [
         {range: baseSpeed, color: 'Walk'},
         {range: baseSpeed * 2, color: 'ActionDash'},
-        {range: baseSpeed * 3, color: 'BonusDash'}
+        {range: baseSpeed * 4, color: 'BonusDash'}
       ];
 
       return ranges;
