@@ -13,12 +13,10 @@ Hooks.once('dragRuler.ready', (SpeedProvider) => {
     }
 
     getRanges(token) {
-      const movementValues = []
+      const movementValues = [];
 
       Object.entries(token.actor.system.attributes.movement).forEach(([mode, { distance }]) => {
-        if (mode !== "traits") {
-          movementValues.push(distance)
-        }
+        if (mode !== "traits") movementValues.push(distance);
       })
 
       const baseSpeed = Math.max(...movementValues);
